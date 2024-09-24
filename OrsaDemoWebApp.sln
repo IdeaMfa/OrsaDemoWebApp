@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrsaDemoWebApp", "OrsaDemoWebApp.csproj", "{751D92EA-2927-457B-855D-39980AAF2BC9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrsaDemoModels", "..\OrsaDemoModels\OrsaDemoModels.csproj", "{C357B405-43C5-4743-9278-DC9008926612}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{751D92EA-2927-457B-855D-39980AAF2BC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{751D92EA-2927-457B-855D-39980AAF2BC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{751D92EA-2927-457B-855D-39980AAF2BC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{751D92EA-2927-457B-855D-39980AAF2BC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C357B405-43C5-4743-9278-DC9008926612}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C357B405-43C5-4743-9278-DC9008926612}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C357B405-43C5-4743-9278-DC9008926612}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C357B405-43C5-4743-9278-DC9008926612}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4155AE64-CED0-4BE5-B49E-3D8E1A255BE6}
+	EndGlobalSection
+EndGlobal

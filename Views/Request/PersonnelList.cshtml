@@ -1,0 +1,39 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<link rel="stylesheet" href="~/css/mediaresizing.css" />
+
+<div class="container mt5">
+    <table id="dataTable" class="table table-striped table-bordered" style="width:100%">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Phone Number</th>
+                <th>Email</th>
+                <th>Date of Birth</th>
+                <th>City</th>
+                <th>Country</th>
+                <th>Institution Name</th>
+                <th>Institution Photo</th>
+                <th>Personnel Photo</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
+
+<div class="container">
+    <div class="col-12 d-flex justify-content-end">
+        <button class="btn btn-success">
+            <a class="nav-link text-white" asp-area="" asp-controller="AddPersonnel" asp-action="AddPersonnel">Add Personnel</a>
+        </button>
+    </div>
+</div>
+<script src="~/js/listpersonnels.js"></script>

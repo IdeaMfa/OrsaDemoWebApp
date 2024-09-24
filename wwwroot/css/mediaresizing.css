@@ -1,0 +1,16 @@
+﻿/*.media-img {
+
+    max-width: 100%;
+    width: auto;
+    border-radius: 15px;
+
+}
+*/
+
+.media-img {
+    width: 100%; /* This makes the image responsive */
+    height: auto; /* This maintains the aspect ratio */
+    max-height: 100%; /* Adjust this value to control the maximum height */
+    object-fit: cover; /* This ensures the image covers the container while maintaining aspect ratio */
+    border-radius: 5px;
+}

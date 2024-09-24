@@ -1,0 +1,76 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\js\GetLocations.js" />
+    <Content Remove="wwwroot\js\GetLocationToDDMenu.js" />
+    <Content Remove="wwwroot\js\InstitutionDropDown.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\js\GetLocations.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\js\GetLocationToDDMenu.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\js\InstitutionDropDown.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\js\GetLocationToDdMenu.js" />
+    <None Include="wwwroot\js\InstitutionDropDown.js" />
+    <None Include="wwwroot\MediaLibrary\06e8e7d7-7c17-4474-af57-5840c5d8753fDarkSouls1.jpg" />
+    <None Include="wwwroot\MediaLibrary\11abd7ff-c854-4e64-8808-4ed500bb918aDarkSouls1.jpg" />
+    <None Include="wwwroot\MediaLibrary\228caf13-0691-44bb-a7f1-5cef494c9fffDarkSouls3.jpg" />
+    <None Include="wwwroot\MediaLibrary\27722926-2644-4aa6-9b76-7c4959c49701DarkSouls3.jpg" />
+    <None Include="wwwroot\MediaLibrary\289f8e06-e687-4c14-8fc1-ad6edb66f0f0DarkSouls2.jpg" />
+    <None Include="wwwroot\MediaLibrary\29ddc592-5287-4e17-8928-34ba42d31944DarkSouls2.jpg" />
+    <None Include="wwwroot\MediaLibrary\30cc0e6e-8cec-4f26-96ab-8c2b7f0c6938DarkSouls1.jpg" />
+    <None Include="wwwroot\MediaLibrary\332d5d14-81e2-4d77-911d-0caa9746a9e1DarkSouls1.jpg" />
+    <None Include="wwwroot\MediaLibrary\33326e00-891b-4dcb-869b-486d2139545fDarkSouls2.jpg" />
+    <None Include="wwwroot\MediaLibrary\389c708d-95d8-4e7d-bbb7-a24b438bb992DarkSouls4.jpg" />
+    <None Include="wwwroot\MediaLibrary\3b6d9f56-3b74-4dea-a1d5-9282a98a5575DarkSouls1.jpg" />
+    <None Include="wwwroot\MediaLibrary\46c88f1f-b6be-477c-b6f7-9b75fc955de2DarkSouls1.jpg" />
+    <None Include="wwwroot\MediaLibrary\52e17101-e9a7-4111-8c64-2f238cd29eafDarkSouls4.jpg" />
+    <None Include="wwwroot\MediaLibrary\5d9a6628-335c-41ee-9c9f-1e24dcbb83eaDarkSouls1.jpg" />
+    <None Include="wwwroot\MediaLibrary\5fbdab8c-293f-4dfa-bc10-f1bdb55dd46fDarkSouls1.jpg" />
+    <None Include="wwwroot\MediaLibrary\6edfcd2a-5b5e-4c36-be6b-b4111145f429DarkSouls4.jpg" />
+    <None Include="wwwroot\MediaLibrary\717924b7-b30c-47d8-b203-0035d1f2824bDarkSouls3.jpg" />
+    <None Include="wwwroot\MediaLibrary\8896bfe6-3aab-433b-b185-390a5237d1c4DarkSouls1.jpg" />
+    <None Include="wwwroot\MediaLibrary\8e2b08c7-71f5-4d4b-8596-561332064a50DarkSouls4.jpg" />
+    <None Include="wwwroot\MediaLibrary\b16af84f-7de3-48f4-9738-b18eb02ba4ebDarkSouls3.jpg" />
+    <None Include="wwwroot\MediaLibrary\b1d287f0-5b4d-4106-a3f1-36b974ff7320DarkSouls1.jpg" />
+    <None Include="wwwroot\MediaLibrary\b75e8532-f389-46e5-b508-43e5b5605db7DarkSouls3.jpg" />
+    <None Include="wwwroot\MediaLibrary\bd640b25-9ac0-43d8-81d1-7f6422f767ebDarkSouls2.jpg" />
+    <None Include="wwwroot\MediaLibrary\c6b485a0-86f7-43d2-9c0d-1575d12b9839DarkSouls1.jpg" />
+    <None Include="wwwroot\MediaLibrary\ce042daf-50e6-4616-aacf-2fd85acd72ddDarkSouls1.jpg" />
+    <None Include="wwwroot\MediaLibrary\dcd39e9e-6b0a-41cc-a024-08217f5c05fbDarkSouls4.jpg" />
+    <None Include="wwwroot\MediaLibrary\e56f282b-e377-4b05-aa2c-6fb16de4d583DarkSouls1.jpg" />
+    <None Include="wwwroot\MediaLibrary\e7c9f46a-4ce1-4fd2-81eb-733d9fe5987cDarkSouls1.jpg" />
+    <None Include="wwwroot\MediaLibrary\f479eac0-2f09-4783-9c4d-fb2650f5c84cDarkSouls1.jpg" />
+    <None Include="wwwroot\MediaLibrary\f747874e-74aa-400f-85d8-5dc6fcd2627aDarkSouls1.jpg" />
+    <None Include="wwwroot\MediaLibrary\f8e466f2-89a0-43ee-9729-df58a47d2a90DarkSouls2.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="6.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.17" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite.Design" Version="1.1.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.17" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.17">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OrsaDemoModels\OrsaDemoModels.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\MediaLibrary\" />
+  </ItemGroup>
+
+</Project>

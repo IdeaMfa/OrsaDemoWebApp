@@ -1,0 +1,155 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<h2>Add New Personnel</h2>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-7 col-sm-12 mr-2 mt-2 py-5 shadow-lg p-3 mb-5 bg-white rounded">
+            <form id="PersonelForm">
+                <div class="form-group row mb-5">
+                    <div class="col-md-4">
+                        <label for="PersonnelName" class="col-md-12 col-form-label mb-1">
+                            <p class="text-sm-end mb-1">Personnel Name:</p>
+                        </label>
+                        <div class="container-fluid">
+                            <input type="text" class="form-control" name="name" id="PersonnelName" />
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="PersonnelSurname" class="col-md-12 col-form-label mb-1">
+                            <p class="text-sm-end mb-1">Personnel Surname:</p>
+                        </label>
+                        <div class="container-fluid">
+                            <input type="text" class="form-control" id="PersonnelSurname" />
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="PersonnelPhoneNumber" class="col-12 col-form-label mb-1">
+                            <p class="text-sm-end mb-1">Personnel Phone Number:</p>
+                        </label>
+                        <div class="container-fluid">
+                            <input type="text" class="form-control" id="PersonnelPhoneNumber" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="PersonnelDateOfBirth" class="col-12 col-form-label mb-1">
+                            <p class="text-sm-end mb-1">Personnel Date Of Birth:</p>
+                        </label>
+                        <div class="col-12 container-fluid">
+                            <input type="date" class="form-control" id="PersonnelDateOfBirth" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="PersonnelEmail" class="col-12 col-form-label mb-1">
+                            <p class="text-sm-end mb-1">Personnel Email:</p>
+                        </label>
+                        <div class="col-12 container-fluid">
+                            <input type="email" class="form-control" id="PersonnelEmail" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="Password" class="col-12 col-form-label mb-1">
+                            <p class="text-sm-end mb-1">Password:</p>
+                        </label>
+                        <div class="col-12 container-fluid">
+                            <input type="password" class="form-control" id="Password" />
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-5">
+                        <label for="PasswordAgain" class="col-12 col-form-label mb-1">
+                            <p class="text-sm-end mb-1">Password Again:</p>
+                        </label>
+                        <div class="col-12 container-fluid">
+                            <input type="password" class="form-control" id="PasswordAgain" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="country"> Select Country </label>
+                        <select id="country" name="country" class="form-control">
+                            <option value=""> Select Country </option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="city">Select City</label>
+                        <select id="city" name="city" class="form-control">
+                            <option value=""> Select City </option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div id="institutionField_1" class="form-group row mb-5 justify-content-center form-institution">
+            <div class="col-sm-8 col-md-10 border rounded">
+                <div class="row mb-4 mt-2">
+                    <div class="col-sm-12 col-md-8">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="row">
+                                    <label for="institution" class="col-sm-12 col-form-label"><p class="text-sm-center"> Institution You Graduated </p></label>
+                                    <div class="col-sm-12 container-fluid">
+                                        <select class="form-control" id="institution_1"></select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="row">
+                                    <label for="graduation" class="col-sm-12 col-form-label"><p class="text-sm-center"> Graduation Year </p></label>
+                                    <div class="col-sm-12 container-fluid">
+                                        <input type="text" class="form-control" id="graduation_1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="m-0">
+                            <p> Select by clicking the button to choose institution image </p>
+                        </div>
+                        <input type="file" class="form-control-file institutionfileinput" style="visibility:hidden" multiple="">
+                        <input type="button" class="btn w-50 h-25 bg-dark text-white mb-4" value="Choose" onclick="document.querySelector('.institutionfileinput').click();">
+                    </div>
+                    <div class="col-12">
+                        <div class="row institutionarea">
+                        </div>
+                    </div>
+                </div>
+                <div id="customDiv_50" style="visibility:hidden">Custom Div 50</div>
+            </div>
+            <div class="col-1">
+                <button type="button" class="btn btn-success btn-sm mb-2" onclick="cloneForm(this)">+</button>
+                <button type="button" class="btn btn-danger btn-sm" onclick="clearForm('institutionField_1')">-</button>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-12 mt-2 py-5 h-50 shadow-lg mb-5 bg-white rounded">
+            <form id="photo-id">
+                <div class="col-sm-12">
+                    <div id="previewArea" class="orw mb-4">
+                        <img id="previewImage" src="#" alt="Photo Preview" style="display:none;" />
+                        <div id="=defaultText">
+                            <p>Choose File to Upload Photo</p>
+                        </div>
+                    </div>
+                </div>
+                <input type="file" class="form-control-file" id="photoUpload" style="visibility:hidden" multiple />
+                <input type="button" for="photoUpload" id="photojs" class="btn w-30 h-25 bg-dark text-white" value="Choose" onclick="document.getElementById('photoUpload').click();" />
+            </form>
+        </div>
+
+        <div class="col-12 d-flex justify-content-end">
+            <input class="btn btn-primary" type="button" value="Save Personnel" id="SavePersonnel">
+        </div>
+
+    </div>
+</div>
+
+<script src="~/js/AddPersonnel.js"></script>
+<script src="~/js/GetLocationToDdMenu.js"></script>
+<script src="~/js/PhotoPreview.js"></script>
+<script src="~/js/institutiondropdown.js"></script>
+<script src="~/js/repeatingfield.js"></script>

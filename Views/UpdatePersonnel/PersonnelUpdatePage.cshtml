@@ -1,0 +1,193 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<link rel="stylesheet" href="~/css/mediaresizing.css" />
+
+<h2> Edit Personnel </h2>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-7 col-sm-12 mr-2 mt-2 py-5 shadow-lg p-3 mb-5 bg-white rounded">
+
+            <form id="PersonelForm">
+                <div class="form-group row mb-5">
+                    <div class="col-md-4">
+                        <label for="PersonnelName" class="col-md-12 col-form-label mb-1">
+                            <p class="text-sm-end mb-1">Personnel Name:</p>
+                        </label>
+                        <div class="container-fluid">
+                            <input type="text" class="form-control" name="name" id="PersonnelName" />
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="PersonnelSurname" class="col-md-12 col-form-label mb-1">
+                            <p class="text-sm-end mb-1">Personnel Surname:</p>
+                        </label>
+                        <div class="container-fluid">
+                            <input type="text" class="form-control" id="PersonnelSurname" />
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="PersonnelPhoneNumber" class="col-12 col-form-label mb-1">
+                            <p class="text-sm-end mb-1">Personnel Phone Number:</p>
+                        </label>
+                        <div class="container-fluid">
+                            <input type="text" class="form-control" id="PersonnelPhoneNumber" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="PersonelDateOfBirth" class="col-12 col-form-label mb-1">
+                            <p class="text-sm-end mb-1">Personel Date Of Birth:</p>
+                        </label>
+                        <div class=" col-12 container-fluid">
+                            <input type="date" class="form-control" id="PersonnelDateOfBirth" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="PersonnelEmail" class="col-12 col-form-label mb-1">
+                            <p class="text-sm-end mb-1">Personnel Email:</p>
+                        </label>
+                        <div class="col-12 container-fluid">
+                            <input type="email" class="form-control" id="PersonnelEmail" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="Password" class="col-12 col-form-label mb-1">
+                            <p class="text-sm-end mb-1">Password:</p>
+                        </label>
+                        <div class="col-12 container-fluid">
+                            <input type="password" class="form-control" id="Password" />
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-5">
+                        <label for="PasswordAgain" class="col-12 col-form-label mb-1">
+                            <p class="text-sm-end mb-1">Password Again:</p>
+                        </label>
+                        <div class="col-12 container-fluid">
+                            <input type="password" class="form-control" id="PasswordAgain" />
+                        </div>
+                    </div>
+
+                    <!-- Static text boxes -->
+                    <div class="col-md-6">
+                        <label for="staticCountry" class="col-12 col-form-label mb-1">
+                            <p class="text-sm-end mb-1">Selected Country:</p>
+                        </label>
+                        <div class="col-12 container-fluid">
+                            <input type="text" class="form-control" id="staticCountry" value="Static Country Text" readonly />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="staticCity" class="col-12 col-form-label mb-1">
+                            <p class="text-sm-end mb-1">Selected City:</p>
+                        </label>
+                        <div class="col-12 container-fluid">
+                            <input type="text" class="form-control" id="staticCity" value="Static City Text" readonly />
+                        </div>
+                    </div>
+
+                    <!-- Dropdown menus -->
+                    <div class="col-md-6 form-group">
+                        <label for="country">Country</label>
+                        <select class="form-control" id="country">
+                            <option value="">Select Country</option>
+                            <!-- Country options will be populated here -->
+                        </select>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="city">City</label>
+                        <select class="form-control" id="city" disabled>
+                            <option value="">Select City</option>
+                            <!-- City options will be populated here -->
+                        </select>
+                    </div>
+
+                </div>
+
+            </form>
+            
+            @* PreviewS are for institution *@
+            <div id="form-container">
+                <div id="database_1" class="form-institution row mb-5 justify-content-center">
+                    <div class="col-sm-8 col-md-10 border rounded">
+                        <div class="row mb-4 mt-2">
+                            <div class="col-sm-12 col-md-8">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="row">
+                                            <label for="institution" class="col-sm-12 col-form-label">
+                                                <p class="text-sm-center">Institution You Graduated</p>
+                                            </label>
+                                            <div class="col-sm-12 container-fluid">
+                                                <select class="institution form-control" id="databaseinstitution_1"><option value="1"></option></select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="row">
+                                            <label for="graduation" class="col-sm-12 col-form-label">
+                                                <p class="text-sm-center">Graduation Year</p>
+                                            </label>
+                                            <div class="col-sm-12 container-fluid">
+                                                <input type="text" class="form-control" id="databaseinstitutiongraduation_1">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12">
+                                <div class="m-0">
+                                    <p>Click to button for uploading institution photo</p>
+                                </div>
+                                <input type="file" class="form-control-file databaseinstitutionfileinput" style="visibility:hidden" multiple="">
+                                <input type="button" class="btn w-50 h-25 bg-dark text-white mb-4" value="seç" onclick="document.querySelector('.databaseinstitutionfileinput').click();">
+                            </div>
+                            <div class="col-12">
+                                <div class="row databaseinstitutionarea">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <button type="button" class="btn btn-success btn-sm mb-2" onclick="cloneForm(this)">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cold-md-4 col-sm-12 mt-2 py-5 h-50 shadow-lg mb-5 bg-white rounded">
+                <form id="photoid">
+
+                    <div id="previewArea" class="row mb-4">
+                        
+                        <img id="previewImage" src="#0" alt="Photo Preview" style="display:none;" />
+                        <div id="defaultText">
+                            <p> Choose Photo to Upload </p>
+                        </div>
+
+                        <input type="file" class="form-control-file" id="photoUpload" style="visibility:hidden" multiple />
+                        <input type="button" for="photoUpload" id="photojs" class="btn w-25 h-25 bg-dark text-white" value="Choose" onclick="document.getElementById('photoUpload').click();" /> 
+
+                    </div>
+
+                </form>
+            </div>
+
+            
+
+        </div>
+
+        <div class="col-12 d-flex justify-content-end">
+            <input class="btn btn-primary" type="button" value="Update" id="Update">
+        </div>
+
+    </div>
+</div>
+
+<script type="module" src="~/js/UpdatePersonnel/main.js"></script>
+<script src="~/js/getlocationtoddmenu.js"></script>
+<script src="~/js/photopreview.js"></script>
+<script src="~/js/institutiondropdown.js"></script>

@@ -1,0 +1,25 @@
+﻿#SavePersonnel {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+    #SavePersonnel:hover {
+        background-color: #0056b3;
+        transform: translateY(-2px);
+        cursor: pointer;
+    }
+
+    #SavePersonnel:active {
+        background-color: #004085;
+        transform: translateY(0);
+    }
+
+.d-flex.justify-content-end {
+    padding-right: 15px;
+}
